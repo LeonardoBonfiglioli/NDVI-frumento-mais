@@ -113,4 +113,4 @@ elaborati su Google Earth Engine.
 
 **Leonardo Bonfiglioli** — Laurea magistrale in Precise and Sustainable
 Agriculture, Università di Bologna
-[LinkedIn](www.linkedin.com/in/leonardo-bonfiglioli-516317371) · ottobre 2026
+[LinkedIn](https://www.linkedin.com/in/leonardo-bonfiglioli-516317371) · ottobre 2026
