@@ -80,11 +80,37 @@ per coprire un'annata agraria completa.
 - **La natura del secondo raccolto non è determinata.** Le date sono
   compatibili con soia o sorgo di secondo raccolto, oppure con una cover crop:
   la distinzione richiederebbe un sopralluogo o un classificatore dedicato.
+  **precisione mappa UCROPMAP** la precisione dichiarata per le culture principali
+  è del 79.3%.
 
 ## Riprodurre
 
 | File | Dove si esegue |
 |---|---|
-| `gee/01_eucropmap_erosione_campionamento.js` | Code Editor di Google Earth Engine |
-| `notebook/02_analisi_curve.ipynb` | Google Colab |
-| `Dati/ndvi_frumento_mais_2022.csv` | output dello script GEE, input del notebook |
+| [`gee/gee_code.js`](gee/gee_code.js) | Code Editor di Google Earth Engine |
+| [`notebook/Untitled1.ipynb`](notebook/Untitled1.ipynb) | Google Colab |
+| [`Dati/ndvi_frumento_mais_2022.csv`](Dati/ndvi_frumento_mais_2022.csv) | output dello script GEE, input del notebook |
+
+## Licenza e attribuzione
+
+Codice distribuito con licenza MIT. Figure ed elaborazioni con licenza
+CC-BY-4.0.
+
+Questo lavoro utilizza dati EUCROPMAP del Joint Research Centre della
+Commissione europea (CC-BY-4.0) e dati Copernicus Sentinel-2 modificati,
+elaborati su Google Earth Engine.
+
+> d'Andrimont, R., Verhegghen, A., Lemoine, G., Kempeneers, P., Meroni, M. &
+> Van der Velde, M. (2021). *From parcel to continental scale — A first
+> European crop type map based on Sentinel-1 and LUCAS Copernicus in-situ
+> observations.* Remote Sensing of Environment, 266, 112708.
+> [doi:10.1016/j.rse.2021.112708](https://doi.org/10.1016/j.rse.2021.112708)
+> & d'Andrimont, R. (2024). *European Union crop map 2022: Earth observation's
+> 10-meter dive into Europe's crop tapestry.* Scientific Data, 11, 1048.
+> [doi:10.1038/s41597-024-03884-y](https://doi.org/10.1038/s41597-024-03884-y)
+
+---
+
+**Leonardo Bonfiglioli** — Laurea magistrale in Precise and Sustainable
+Agriculture, Università di Bologna
+[LinkedIn](www.linkedin.com/in/leonardo-bonfiglioli-516317371) · ottobre 2026
