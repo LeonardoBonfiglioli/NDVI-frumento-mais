@@ -1,9 +1,9 @@
 # Frumento tenero e mais visti da satellite — pianura bolognese, 2021/22
 
 Curve stagionali di NDVI delle due principali colture erbacee della bassa
-bolognese, ricostruite da Sentinel-2 su un'annata agraria completa di 390gg da 1 ottobre 2021 a 31 ottobre 2022.
+bolognese, ricostruite da Sentinel-2 su un'annata agraria completa di 390 giorni, dal 1° ottobre 2021 al 31 ottobre 2022.
 
- 
+![Curve stagionali NDVI di frumento tenero e mais, pianura bolognese 2021/22](figure/grafico.png)
 
 ## In breve
 
@@ -19,8 +19,8 @@ Quattro risultati:
    settembre** (10-14% dei punti sopra NDVI 0,40), compatibile con un secondo
    raccolto o una coltura di copertura. La mediana non lo rileva, ma emerge solo
    dal 90° percentile.
-4. **la senescenza del mais è datata tra metà luglio e fine agosto**,
-   con un ampiezza della banda interquartile più ampia del frumneto dovuto
+4. **La senescenza del mais è datata tra metà luglio e fine agosto**,
+   con un'ampiezza della banda interquartile più ampia del frumento dovuto
    alla differenza tra raccolta di mais da trinciato e mais da granella
 
 
@@ -36,6 +36,10 @@ Area di studio: rettangolo di circa 80.000 ha fra Medicina e Molinella
 (11,55-11,90 E; 44,42-44,68 N). Periodo: 1 ottobre 2021 - 31 ottobre 2022,
 per coprire un'annata agraria completa.
 
+
+![Area di studio con i 250 punti di campionamento per coltura](figure/campi_mais_frumento_con_punti.png)
+(figure/area studio punti.png)
+
 ## Metodo
 
 1. **Selezione** dei pixel delle classi 211 (frumento tenero) e 216 (mais) da
@@ -44,15 +48,16 @@ per coprire un'annata agraria completa.
    vicini appartengono alla stessa classe. Elimina i pixel misti di bordo
    campo e gran parte degli errori isolati di classificazione. Si ottiene una superficie
    residua: 18.000 ha e 8.000 ha.
-3. **Campionamento stratificato** di 250 punti per classe (seed = 42), fissi
+   ![Campi di frumento e mais dopo l'erosione morfologica 5×5](figure/erosione5X5_campi.png)
+4. **Campionamento stratificato** di 250 punti per classe (seed = 42), fissi
    per tutta la serie temporale ed esportati come asset immutabile.
-4. **Serie Sentinel-2**: 155 scene, NDVI = (B8−B4)/(B8+B4), mascheratura con
+5. **Serie Sentinel-2**: 155 scene, NDVI = (B8−B4)/(B8+B4), mascheratura con
    Cloud Score+ (`cs_cdf` ≥ 0,60), compositi decadali per mediana. 39 decadi che
-   coprono i 390 gionri del ciclo culturale.
-6. **Filtri di qualità**: a livello di osservazione, la soglia
+   coprono i 390 giorni del ciclo colturale.
+5. **Filtri di qualità**: a livello di osservazione, la soglia
    Cloud Score+; a livello di decade, esclusione sotto 30 punti validi su 250
    e marcatura (con punto vuoto nel grafico) sotto 150.
-7. **Aggregazione** per coltura e decade: mediana, quartili e 90° percentile su frumento.
+6. **Aggregazione** per coltura e decade: mediana, quartili e 90° percentile su frumento.
 
 ## Limiti
 
@@ -61,7 +66,7 @@ per coprire un'annata agraria completa.
   comportamento medio pluriennale.
 - **Distorsione verso gli appezzamenti grandi.** L'erosione 5×5 scarta
   interamente i campi stretti o irregolari. Il campione descrive la
-  cerealicoltura di pianura su campi medio grandi. Lo stesso metodo in collina
+  cerealicoltura di pianura su campi medio-grandi. Lo stesso metodo in collina
   renderebbe molto peggio.
 - **Accuratezza della mappa colturale.** EUCROPMAP ha un'accuratezza non
   unitaria; l'erosione riduce ma non annulla gli errori di classificazione.
@@ -73,6 +78,6 @@ per coprire un'annata agraria completa.
   della mietitrebbia di alcuni giorni.
 - **La natura del secondo raccolto non è determinata.** Le date sono
   compatibili con soia o sorgo di secondo raccolto, oppure con una cover crop:
-   la distinzione richiederebbe un sopralluogo o un classificatore dedicato.
+  la distinzione richiederebbe un sopralluogo o un classificatore dedicato.
 
  
