@@ -38,7 +38,7 @@ per coprire un'annata agraria completa.
 
 
 ![Area di studio con i 250 punti di campionamento per coltura](figure/campi_mais_frumento_con_punti.png)
-(figure/area studio punti.png)
+![Punti di studio nell'area](figure/area_studio_punti.png)
 
 ## Metodo
 
