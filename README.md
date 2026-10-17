@@ -19,7 +19,7 @@ Quattro risultati:
    settembre** (10-14% dei punti sopra NDVI 0,40), compatibile con un secondo
    raccolto o una coltura di copertura. La mediana non lo rileva, ma emerge 
    dal 90° percentile.
-4. **La banda interquartile del mais in fase di raccolta (agosto-settembre) è più alta di
+4. **La banda interquartile del mais in fase di raccolta (agosto-settembre) è più ampia di
    quella del frumento alla mietitura**,
   questa ampiezza è dovuta al differente periodo di mietitura tra mais da granella e da trinciato
   e da diverse classi di precocità. 
@@ -87,8 +87,8 @@ per coprire un'annata agraria completa.
 
 | File | Dove si esegue |
 |---|---|
-| [`gee/gee_code.js`](gee/gee_code.js) | Code Editor di Google Earth Engine |
-| [`notebook/Untitled1.ipynb`](notebook/Untitled1.ipynb) | Google Colab |
+| [`google engin code`](gee/gee_code.js) | Code Editor di Google Earth Engine |
+| [`notebook calcoli`](notebook/Untitled1.ipynb) | Google Colab |
 | [`Dati/ndvi_frumento_mais_2022.csv`](Dati/ndvi_frumento_mais_2022.csv) | output dello script GEE, input del notebook |
 
 ## Licenza e attribuzione
