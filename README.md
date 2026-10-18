@@ -58,6 +58,10 @@ per coprire un'annata agraria completa.
    e marcatura (con punto vuoto nel grafico) sotto 150.
 6. **Aggregazione** per coltura e decade: mediana, quartili e 90° percentile su frumento.
 
+   ## nota sul processo
+   Gli script su google engine e notebook sono satati scritti con l'aiuto di un agente AI, procedimento metodologico
+   validazione dei dati e interpretazione agrnonomiche sono mie.
+
 ## Limiti
 
 - **Un solo anno, e di siccità.** Il 2022 è stato segnato da una
