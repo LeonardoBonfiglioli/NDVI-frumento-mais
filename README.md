@@ -60,7 +60,7 @@ per coprire un'annata agraria completa.
 
    ## nota sul processo
    Gli script su google engine e notebook sono satati scritti con l'aiuto di un agente AI, procedimento metodologico
-   validazione dei dati e interpretazione agrnonomiche sono mie.
+   validazione dei dati e interpretazione agrononomiche sono mie.
 
 ## Limiti
 
